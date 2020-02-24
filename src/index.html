@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Bootstrap 4 Layout</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Bootstrap external stylesheet-->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <!--External Style Sheet for my CSS-->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class= "container-fluid"><!--Grid container-->
+            <header class="navbar navbar-expand-xl navbar-dark bg-dark"><!--Navbar-->
+                <h1 class="navbar-brand">Jim's Books & Games</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
+                <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Products</a><!--Dropdown nav-->
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Books</a>
+                                <a class="dropdown-item" href="#">Games</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Video Games</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="jumbotron mt-1 mb-3"><!--Hero Section-->
+                    <h2 class="display-4">Books. Games. Video Games.</h2>
+                    <p class="lead">
+                        Aliquam placerat consequat pellentesque. Etiam interdum eleifend tincidunt. Nulla facilisi. Pellentesque vel purus tristique, volutpat dolor a, imperdiet nisl.
+                    </p>
+                    <p class="lead">
+                        <a class="btn btn-dark btn-xl" href="#" role="button">Shop</a>
+                    </p>
+                </section>
+                <div class="row"><!--Grid System--> <!--Margin-->
+                    <div class="col-sm-12 col-md-4">
+                        <section class="card mb-4"><!--margin-->
+                            <article class="card-body text-center">
+                                <h5 class="card-title">Featured Book</h5>
+                                <p class="card-text">The latest book in the Sci-Fi Book series!</p>
+                                <a href="#" class="card-link">More Books</a>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="col">
+                        <section class="card">
+                            <article class="card-body text-center">
+                                <h5 class="card-title">Featured Game</h5>
+                                <p class="card-text">Check out Carcassonne, a 2000 classic Euro-Game!</p>
+                                <a href="#" class="card-link">More Games</a>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="col">
+                        <section class="card">
+                            <article class="card-body text-center">
+                                <h5 class="card-title">Featured Video Game</h5>
+                                <p class="card-text">Build your own game in the pseudo game engine, Dreams!</p>
+                                <a href="#" class="card-link">More Video Games</a>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <section class="row mt-sm-4 mt-md-0">
+                    <article class="col-sm-12 col-md-8 text-sm-center text-md-left">
+                        <h3>Up Coming SALE!</h3>
+                        <p class="lead">
+                            All books, games, and video games will be 20%-75% off all through March!
+                        </p>
+                        <p>
+                            Aliquam placerat consequat pellentesque. Etiam interdum eleifend tincidunt. Nulla facilisi. Pellentesque vel purus tristique, volutpat dolor a, imperdiet nisl. Fusce vulputate turpis non commodo fermentum. Cras in molestie justo, at fermentum neque. Nunc placerat orci at odio pharetra ultricies. Proin id diam ornare, euismod metus eu, rutrum odio. Nullam risus mauris, hendrerit et tempor eu, commodo ut est.
+                        </p>
+                        <p>
+                            Aliquam placerat consequat pellentesque. Etiam interdum eleifend tincidunt. Nulla facilisi. Pellentesque vel purus tristique, volutpat dolor a, imperdiet nisl. Fusce vulputate turpis non commodo fermentum. Cras in molestie justo, at fermentum neque. Nunc placerat orci at odio pharetra ultricies. Proin id diam ornare, euismod metus eu, rutrum odio. Nullam risus mauris, hendrerit et tempor eu, commodo ut est.
+                        </p>
+                    </article>
+                    <article class="col-sm-12 col-md-4"> <!--Vertical Navigation-->
+                        <h3 class="mb-4">Items on sale based on percent off!</h3>
+                        <ul class="nav flex-column nav-pills text-center text-sm-center text-md-center">
+                            <li class="nav-item"><a class="nav-link active mb-1" href="#">75% off Products</a></li><!--more margins-->
+                            <li class="nav-item"><a class="nav-link active mb-1" href="#">50% off Products</a></li>
+                            <li class="nav-item"><a class="nav-link active mb-1" href="#">25% off Products</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">20% off Products</a></li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+        </div>
+        <!--Link to jquery scripts-->
+        <script src="/js/jquery.min.js"></script>
+        <!--link to popper scripts-->
+        <script src="/js/popper.min.js"></script>
+        <!--link to bootstrap scripts-->
+        <script src="/js/bootstrap.min.js"></script>
+    </body>
+</html>

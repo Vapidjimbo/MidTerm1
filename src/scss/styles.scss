@@ -1,0 +1,22 @@
+// Variable Overrides 
+
+//theme changes
+$theme-colors: (
+  "dark": #28324B
+);
+
+$body-bg: #FBDE44;
+
+.jumbotron, .card-body {
+    background-color: #ffffff !important;
+    border-top: 3px solid #F65158;
+    border-radius: 4px;
+}
+
+header {
+    border-radius: 4px;
+}
+
+
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
