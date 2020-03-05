@@ -1,20 +1,46 @@
-// Variable Overrides 
-
-//theme changes
 $theme-colors: (
-  "dark": #28324B
+  "dark": #168A65
 );
 
-$body-bg: #FBDE44;
+$body-bg: #BEB992;
 
-.jumbotron, .card-body {
-    background-color: #ffffff !important;
-    border-top: 3px solid #F65158;
-    border-radius: 4px;
+.jumbotron {
+    background-image: url("https://www.elsetge.cat/myimg/f/13-134819_wood-wallpaper-high-resolution-wooden-background.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
 }
 
-header {
-    border-radius: 4px;
+.card-body {
+  background-image: url("https://designmodo.com/wp-content/uploads/2011/11/Wood-Textures-6.jpg") !important;
+  color: white;
+}
+
+.card-img-top {
+  border: outset;
+}
+
+.wood_con {
+  background-color: #168A65;
+  opacity: 90%;
+}
+
+.wood_con p, .wood_con h2 {
+  opacity: 100%;
+}
+
+footer {
+  color: white;
+  padding-bottom: 1em;
+}
+
+footer ul {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+footer a {
+  color: tan;
 }
 
 
