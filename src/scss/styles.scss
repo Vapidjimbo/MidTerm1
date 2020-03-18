@@ -1,8 +1,49 @@
-$theme-colors: (
-  "dark": #168A65
+//sass variables
+
+$theme-colors: (  
+  "dark": rgb(3, 105, 73) //sass ex 1
+  
 );
 
-$body-bg: #BEB992;
+$main-bg: rgb(197, 191, 148); //sass ex 2
+
+$body-bg: peru; //sass ex 3
+
+$secondary-bg: rgb(3, 105, 73); //sass ex 4
+
+$font-headers: Impact, 'Arial Narrow Bold', sans-serif; //sass ex 5
+
+$font-body: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; //sass ex 6
+
+//general styles, header and jumbotron
+body{
+  font-family: $font-body;
+}
+
+h1, h2 {
+  font-family: $font-headers
+}
+
+h3, h4, h5, h6 {
+  font-family: $font-headers;
+  font-weight: lighter;
+}
+
+#header {
+  padding: 2em;
+  font-size: x-large;
+}
+
+#logo { 
+  height: auto;
+  width: 30%;
+}
+
+main {
+  background-color: $main-bg;
+  margin: auto;
+  padding-bottom: .1em;
+}
 
 .jumbotron {
     background-image: url("https://www.elsetge.cat/myimg/f/13-134819_wood-wallpaper-high-resolution-wooden-background.jpg") !important;
@@ -11,17 +52,98 @@ $body-bg: #BEB992;
     color: white;
 }
 
-.card-body {
+//footer styles
+footer {
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  font-size: 1.5rem;
+  margin: auto;
+  text-align: left;
+}
+
+footer a {
+  color: tan;
+}
+
+footer a:hover {
+  color: white;
+}
+
+//social media styles
+#soc {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+#soc li {
+  display: inline-block;
+}
+
+#soc a {
+  margin-left: 1em;
+}
+
+#soc p:first-child {
+  font-size: 1.5rem;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+//home styles
+#home #carousel {
+  height: auto;
+  width: 88%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+#home .card-body {
   background-image: url("https://designmodo.com/wp-content/uploads/2011/11/Wood-Textures-6.jpg") !important;
   color: white;
 }
 
-.card-img-top {
-  border: outset;
+#home .card-img-top {
+  height: auto;
+}
+
+#home #first_section a {
+  color: white;
 }
 
 .wood_con {
-  background-color: #168A65;
+  background-color: $secondary-bg;
   opacity: 90%;
 }
 
@@ -29,20 +151,107 @@ $body-bg: #BEB992;
   opacity: 100%;
 }
 
-footer {
+#home hr {
+  background-color: $secondary-bg;
+  padding: 1em;
+}
+
+// menu styles
+#first_section {
+  width: 100%;
+}
+
+#menu_gallery {
+  width: 10%;
+  margin: auto;
+}
+
+#menu table {
+  width: 99.5%;
+
+}
+
+#menu th {
   color: white;
-  padding-bottom: 1em;
 }
 
-footer ul {
-  list-style: none;
-  font-size: 1.5rem;
+#menu td {
+  color: black;
 }
 
-footer a {
-  color: tan;
+#menu #carousel {
+  height: auto;
+  width: 88%;
+  margin: auto;
+  margin-bottom: 2em;
 }
 
+#menu p {
+  line-height: 150%;
+}
 
+//about styles
+#about section.card {
+  width: 70%;
+  margin: auto;
+}
+
+#about_img {
+  height: auto; 
+  width: 10%;
+}
+
+#about { //sass ex 7
+  ul {
+    li {
+      list-style-type: none;
+      background-color: $secondary-bg;
+      color: white;
+      border-radius: 1px;
+    }
+  }
+}
+
+#about hr {
+  background-color: $secondary-bg;
+  padding: 1em;
+}
+
+//media queries
+@media (max-width: 768px) {
+  img {
+    display: none;
+  }
+ #carousel {
+    display: none;
+  }
+  .jumbotron {
+    background-size: 0%;
+    background-repeat: initial;
+  }
+  iframe {
+    width: 100%;
+    margin-left: 1.5em;
+  }
+  #about ul {
+    margin-right: 1em;
+  }
+  article {
+    margin-right: 1em;
+  }
+  #home article.card-body {
+    margin-right: 0em;
+  }
+  #table {
+    margin: .5em;
+    font-size: 70%;
+  }
+ .fa {
+   margin-left: 0;
+ }
+ #soc li:first-child {
+   font-size: 50%;
+ }
+}
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
