@@ -21,7 +21,7 @@ body{
 }
 
 h1, h2 {
-  font-family: $font-headers
+  font-family: $font-headers;
 }
 
 h3, h4, h5, h6 {
@@ -225,8 +225,13 @@ footer a:hover {
  #carousel {
     display: none;
   }
+  h1.text-hide {
+    color: white;
+    font-family: $font-headers;
+    font-size: x-large;
+  }
   .jumbotron {
-    background-size: 0%;
+    background-size: 100%;
     background-repeat: initial;
   }
   iframe {
@@ -246,11 +251,15 @@ footer a:hover {
     margin: .5em;
     font-size: 70%;
   }
+  #soc li {
+    margin-left: .5em;
+  }
  .fa {
    margin-left: 0;
  }
  #soc li:first-child {
    font-size: 50%;
+   display: none;
  }
 }
 // Bootstrap Sass Imports
